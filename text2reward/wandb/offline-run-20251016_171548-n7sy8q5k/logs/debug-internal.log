@@ -1,0 +1,16 @@
+{"time":"2025-10-16T17:15:54.711113861-04:00","level":"INFO","msg":"stream: starting","core version":"0.21.2"}
+{"time":"2025-10-16T17:15:55.226129351-04:00","level":"WARN","msg":"featurechecker: GraphQL client is nil, skipping feature loading"}
+{"time":"2025-10-16T17:15:55.22724318-04:00","level":"INFO","msg":"stream: created new stream","id":"n7sy8q5k"}
+{"time":"2025-10-16T17:15:55.227295045-04:00","level":"INFO","msg":"stream: started","id":"n7sy8q5k"}
+{"time":"2025-10-16T17:15:55.227320729-04:00","level":"INFO","msg":"handler: started","stream_id":"n7sy8q5k"}
+{"time":"2025-10-16T17:15:55.227397361-04:00","level":"INFO","msg":"writer: started","stream_id":"n7sy8q5k"}
+{"time":"2025-10-16T17:15:55.227409506-04:00","level":"INFO","msg":"sender: started","stream_id":"n7sy8q5k"}
+{"time":"2025-10-16T17:15:55.228405878-04:00","level":"WARN","msg":"runupserter: server does not expand metric globs but the x_server_side_expand_glob_metrics setting is set; ignoring"}
+{"time":"2025-10-16T17:15:55.238216632-04:00","level":"ERROR","msg":"git repo not found","error":"repository does not exist"}
+{"time":"2025-10-16T17:20:37.577135633-04:00","level":"WARN","msg":"tensorboard: no root directory","error":"timed out after 10s"}
+{"time":"2025-10-16T17:20:37.577393501-04:00","level":"INFO","msg":"tensorboard: tracking new log directory","rootDir":{},"logDir":"LocalOrCloudPath(LocalPath=\"/home/yingyue/scratch/LLMR/text2reward/logs/SAC_1\")","namespace":""}
+{"time":"2025-10-16T17:20:37.680097884-04:00","level":"INFO","msg":"tensorboard: saving file","fileLocation":"/home/yingyue/scratch/LLMR/text2reward/logs/SAC_1/events.out.tfevents.1760649627.beluga4.int.ets1.calculquebec.ca.1608248.0","runPath":"logs/SAC_1/events.out.tfevents.1760649627.beluga4.int.ets1.calculquebec.ca.1608248.0"}
+{"time":"2025-10-16T17:32:58.213255754-04:00","level":"INFO","msg":"stream: closing","id":"n7sy8q5k"}
+{"time":"2025-10-16T17:32:58.213838762-04:00","level":"INFO","msg":"handler: closed","stream_id":"n7sy8q5k"}
+{"time":"2025-10-16T17:32:58.214352643-04:00","level":"INFO","msg":"sender: closed","stream_id":"n7sy8q5k"}
+{"time":"2025-10-16T17:32:58.214386781-04:00","level":"INFO","msg":"stream: closed","id":"n7sy8q5k"}

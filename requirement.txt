@@ -4,3 +4,7 @@ genai
 metaworld
 transformers
 json5
+wandb
+gym
+numpy-1.26.4+computecanada
+tensorboard
