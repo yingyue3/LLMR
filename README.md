@@ -28,3 +28,7 @@ import mujoco_py  # ❌ This causes compilation errors
 # install wandb
 pip install --no-index wandb
 wandb offline
+
+# Run the test in metaworld
+cd LLMR/text2reward
+bash run.sh

@@ -1,5 +1,6 @@
-import gym, sys, os
-import gymnasium as gym_gymnasium
+# import gym, sys, os
+import sys, os
+import gymnasium as gym
 sys.path.insert(0, '/home/yingyue/scratch/LLMR/Metaworld')
 import metaworld, mujoco
 from metaworld.env_dict import (
@@ -68,7 +69,7 @@ def make_env(env_id, max_episode_steps: int = None, record_dir: str = None):
     def _init() -> gym.Env:
         try:
             # Try gymnasium API first (for newer MetaWorld versions)
-            env = gym_gymnasium.make(f"Meta-World/MT1", env_name=env_id)
+            env = gym.make(f"Meta-World/MT1", env_name=env_id)
         except:
             env_cls = ALL_V3_ENVIRONMENTS[env_id]
             env = env_cls()
@@ -126,6 +127,7 @@ if __name__ == '__main__':
         os.makedirs(f"{wandb.run.dir}/codes/{run.id}", exist_ok=True)
         os.system(f"cp -r {args.reward_path[:-11]} {wandb.run.dir}/codes/{run.id}")
 
+
     # set up eval environment
     eval_env = SubprocVecEnv([make_env(args.env_id, record_dir="logs/videos") for i in range(args.eval_num)])
     eval_env = VecMonitor(eval_env)
@@ -146,7 +148,19 @@ if __name__ == '__main__':
 
     # set up sac algorithm
     policy_kwargs = dict(net_arch=[256, 256, 256])
+    print("check point 1")
     model = SAC("MlpPolicy", env, policy_kwargs=policy_kwargs, verbose=1, batch_size=512, gamma=0.99, target_update_interval=2,
                 learning_rate=0.0003, tau=0.005, learning_starts=4000, ent_coef='auto_0.1', tensorboard_log="./logs")
+    print("check point 2")
     model.learn(args.train_max_steps, callback=[eval_callback, WandbCallback(verbose=2)])
+    print("check point 3")
     model.save("./logs/latest_model_" + args.env_id[:-2] + args.exp_name)
+    print("check point 4")
+
+    # print("training done, rendering...")
+    # env.render_mode = "human"
+    # env.render()
+    print("training done")
+    eval_env.close()
+    env.close()
+    wandb.finish()

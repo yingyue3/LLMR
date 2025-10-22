@@ -6,5 +6,6 @@ transformers
 json5
 wandb
 gym
-numpy-1.26.4+computecanada
+numpy==1.26.4+computecanada
 tensorboard
+stable_baselines3

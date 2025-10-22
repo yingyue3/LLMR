@@ -32,22 +32,25 @@ if __name__ == '__main__':
     parser.add_argument('--TASK', type=str, default="drawer-open-v3", \
                         help="choose one task from: drawer-open-v3, drawer-close-v3, window-open-v3, window-close-v3, button-press-v3, sweep-into-v3, door-unlock-v3, door-close-v3, handle-press-v3, handle-press-side-v3")
     parser.add_argument('--FILE_PATH', type=str, default=None)
-    parser.add_argument('--MODEL_NAME', type=str, default="gpt-5-mini")
+    parser.add_argument('--MODEL_NAME', type=str, default="gemini-2.5-flash")
 
     args = parser.parse_args()
+    print(args.TASK)
 
     # File path to save result
     if args.FILE_PATH == None:
         args.FILE_PATH = "results/{}/metaworld-zeroshot/{}.txt".format(args.MODEL_NAME, args.TASK)
 
     os.makedirs(args.FILE_PATH, exist_ok=True)
+    print(args.FILE_PATH)
 
     code_generator = ZeroShotGenerator(METAWORLD_PROMPT, args.MODEL_NAME)
-    print("check point")
     general_code, specific_code = code_generator.generate_code(instruction_mapping[args.TASK], mapping_dicts)
 
     with open(os.path.join(args.FILE_PATH, "general.py"), "w") as f:
         f.write(general_code)
+        print("general_code saved")
 
     with open(os.path.join(args.FILE_PATH, "specific.py"), "w") as f:
         f.write(specific_code)
+        print("specific_code saved")

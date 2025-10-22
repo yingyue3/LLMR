@@ -1,0 +1,16 @@
+{"time":"2025-10-22T16:12:54.334762853-04:00","level":"INFO","msg":"stream: starting","core version":"0.21.2"}
+{"time":"2025-10-22T16:12:54.461969308-04:00","level":"WARN","msg":"featurechecker: GraphQL client is nil, skipping feature loading"}
+{"time":"2025-10-22T16:12:54.462880998-04:00","level":"INFO","msg":"stream: created new stream","id":"pp07ascw"}
+{"time":"2025-10-22T16:12:54.462934096-04:00","level":"INFO","msg":"stream: started","id":"pp07ascw"}
+{"time":"2025-10-22T16:12:54.462948309-04:00","level":"INFO","msg":"handler: started","stream_id":"pp07ascw"}
+{"time":"2025-10-22T16:12:54.463002695-04:00","level":"INFO","msg":"sender: started","stream_id":"pp07ascw"}
+{"time":"2025-10-22T16:12:54.46302346-04:00","level":"INFO","msg":"writer: started","stream_id":"pp07ascw"}
+{"time":"2025-10-22T16:12:54.464262597-04:00","level":"WARN","msg":"runupserter: server does not expand metric globs but the x_server_side_expand_glob_metrics setting is set; ignoring"}
+{"time":"2025-10-22T16:12:54.482611537-04:00","level":"ERROR","msg":"git repo not found","error":"repository does not exist"}
+{"time":"2025-10-22T16:13:19.477075187-04:00","level":"WARN","msg":"tensorboard: no root directory","error":"timed out after 10s"}
+{"time":"2025-10-22T16:13:19.477317735-04:00","level":"INFO","msg":"tensorboard: tracking new log directory","rootDir":{},"logDir":"LocalOrCloudPath(LocalPath=\"/home/yingyue/scratch/LLMR/text2reward/logs/SAC_4\")","namespace":""}
+{"time":"2025-10-22T16:13:19.478710538-04:00","level":"INFO","msg":"tensorboard: saving file","fileLocation":"/home/yingyue/scratch/LLMR/text2reward/logs/SAC_4/events.out.tfevents.1761163989.beluga4.int.ets1.calculquebec.ca.1061568.0","runPath":"logs/SAC_4/events.out.tfevents.1761163989.beluga4.int.ets1.calculquebec.ca.1061568.0"}
+{"time":"2025-10-22T16:13:33.599118915-04:00","level":"INFO","msg":"stream: closing","id":"pp07ascw"}
+{"time":"2025-10-22T16:13:33.599754898-04:00","level":"INFO","msg":"handler: closed","stream_id":"pp07ascw"}
+{"time":"2025-10-22T16:13:33.632985365-04:00","level":"INFO","msg":"sender: closed","stream_id":"pp07ascw"}
+{"time":"2025-10-22T16:13:33.633032062-04:00","level":"INFO","msg":"stream: closed","id":"pp07ascw"}
