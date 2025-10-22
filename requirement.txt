@@ -1,4 +1,4 @@
-openai==1.3.0
+openai
 genai
 
 metaworld

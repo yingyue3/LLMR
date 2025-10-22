@@ -1,4 +1,4 @@
-python metaworld_exp.py --TASK button-press-v3
+python metaworld_exp.py --TASK button-press-v3 --MODEL_NAME gpt-4
 # python metaworld_exp.py drawer-close-v2
 # python metaworld_exp.py window-open-v2
 # python metaworld_exp.py window-close-v2

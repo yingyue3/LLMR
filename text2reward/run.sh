@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --time=02:00:00
-#SBATCH --account=def-mtaylor3
+#SBATCH --account=aip-mtaylor3
 #SBATCH --mem=16G
 #SBATCH --cpus-per-task=1
 #SBATCH --mail-user=yingyue3@ualberta.ca
@@ -11,7 +11,7 @@ module load StdEnv/2023
 module load python/3.10
 module load mujoco/3.0.1
 
-source rwvenv/bin/activate
+source /home/yingyue/scratch/metavenv/bin/activate
 
 
 python ./run_metaworld/sac.py --env_id button-press-v3  \
