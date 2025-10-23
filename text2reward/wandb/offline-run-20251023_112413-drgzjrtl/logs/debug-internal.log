@@ -1,0 +1,12 @@
+{"time":"2025-10-23T11:24:14.243441982-06:00","level":"INFO","msg":"stream: starting","core version":"0.21.2"}
+{"time":"2025-10-23T11:24:14.367535381-06:00","level":"WARN","msg":"featurechecker: GraphQL client is nil, skipping feature loading"}
+{"time":"2025-10-23T11:24:14.369221784-06:00","level":"INFO","msg":"stream: created new stream","id":"drgzjrtl"}
+{"time":"2025-10-23T11:24:14.369238001-06:00","level":"INFO","msg":"stream: started","id":"drgzjrtl"}
+{"time":"2025-10-23T11:24:14.369429793-06:00","level":"INFO","msg":"handler: started","stream_id":"drgzjrtl"}
+{"time":"2025-10-23T11:24:14.369457773-06:00","level":"INFO","msg":"writer: started","stream_id":"drgzjrtl"}
+{"time":"2025-10-23T11:24:14.370404346-06:00","level":"INFO","msg":"sender: started","stream_id":"drgzjrtl"}
+{"time":"2025-10-23T11:24:14.371686206-06:00","level":"WARN","msg":"runupserter: server does not expand metric globs but the x_server_side_expand_glob_metrics setting is set; ignoring"}
+{"time":"2025-10-23T11:24:14.509090288-06:00","level":"ERROR","msg":"git repo not found","error":"repository does not exist"}
+{"time":"2025-10-23T11:25:25.583173778-06:00","level":"WARN","msg":"tensorboard: no root directory","error":"timed out after 10s"}
+{"time":"2025-10-23T11:25:25.583623736-06:00","level":"INFO","msg":"tensorboard: tracking new log directory","rootDir":{},"logDir":"LocalOrCloudPath(LocalPath=\"/home/yingyue/scratch/LLMR/text2reward/logs/SAC_3\")","namespace":""}
+{"time":"2025-10-23T11:25:25.588716823-06:00","level":"INFO","msg":"tensorboard: saving file","fileLocation":"/home/yingyue/scratch/LLMR/text2reward/logs/SAC_3/events.out.tfevents.1761240315.rack06-16.2202967.0","runPath":"logs/SAC_3/events.out.tfevents.1761240315.rack06-16.2202967.0"}
